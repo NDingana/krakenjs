@@ -1,0 +1,12 @@
+Server and browser-side templates
+
+Kraken uses LinkedIn’s Dust as the templating language of choice.
+Adaro is the module responsible for rendering and managing the templates.
+
+
+Templates are loaded from the public/templates directory. Because they reside in the public folder,
+this allows kraken to use the same templates on the server side as well as the client side, allowing you to reuse code.
+
+If we wanted to greet our customers, a basic template would be:
+
+<h1>Hello {name}!</h1>
